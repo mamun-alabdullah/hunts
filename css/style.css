@@ -1,0 +1,640 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.title h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.title p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    width: 570px;
+    margin:0 auto;
+}
+
+/* ===============================================
+            nav start
+================================================== */
+
+nav{
+    background: transparent;
+    border-bottom: 1px solid rgba(254, 198, 0,.2);
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+nav ul li{
+    margin-left: 32px;
+}
+
+nav ul li a{
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    transition: .4s;
+    position: relative;
+}
+
+nav ul li a:after{
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    background: #fec600;
+    width: 0%;
+    height: 3px;
+    content: "";
+    transition: .4s;
+}
+
+nav ul li a:hover{
+    color: #fec600;
+}
+
+nav ul li a:hover:after{
+    width: 100%;
+}
+
+
+
+
+/* ===============================================
+            nav end
+================================================== */
+
+
+/* ===============================================
+            banner start
+================================================== */
+#banner-part .banner{
+    background: url(../images/banner.png) no-repeat center;
+    background-size: cover;
+    
+}
+
+#banner-part .banner .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0,.5);
+    text-align: center;
+    padding: 100px 0;
+    padding-bottom: 200px;
+}
+
+#banner-part .banner h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    color: #fff;
+}
+
+#banner-part .banner h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 55px;
+    font-weight: 700;
+    color: #fec600;
+    text-transform: uppercase;
+}
+
+#banner-part .banner p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    width: 540px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 60px;
+
+}
+
+#banner-part .banner a{
+    display: inline-block;
+    padding: 15px 20px;
+    background: #fec600;
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 20px;
+}
+
+#banner-part .prev{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    z-index: 1;
+    font-size: 40px;
+    color: #fff;
+}
+
+#banner-part .next{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 40px;
+    color: #fff;
+}
+
+
+
+/* ===============================================
+            banner end
+================================================== */
+
+/* ===============================================
+            banner-bottom-shape start
+================================================== */
+
+#banner-bottom-shape {
+    height: 200px;
+    background: #fff;
+    transform: skewX(-83deg);
+    transform-origin: left bottom;
+    position: relative;
+    top: -200px;
+}
+
+/* ===============================================
+            banner-bottom-shape end
+================================================== */
+
+/* ===============================================
+            banner-top-shape start
+================================================== */
+
+#banner-top-shape {
+    height: 200px;
+    background: #fff;
+    transform: skewX(-83deg);
+    transform-origin: right top;
+    position: relative;
+    top: 300px;
+}
+
+/* ===============================================
+            banner-top-shape end
+================================================== */
+
+/* ===============================================
+            about start
+================================================== */
+#about-part{
+    margin-top: -200px;
+}
+#about-part .text{
+    background: #eeeeee;
+    text-align: center;
+    padding: 50px;
+    position: relative;
+}
+
+
+
+
+#about-part .text h4{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color: #000;
+    font-weight: 500;
+}
+
+#about-part .text p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #000;
+    font-weight: 400;
+    transition: .4s;
+}
+
+#about-part .text .shape{
+    width: 40px;
+    height: 40px;
+    background: #eeeeee;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,50%) rotate(45deg);
+}
+
+#about-part .round{
+    width: 370px;
+    height: 370px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-part .text i{
+    position: absolute;
+    bottom: -49px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .4s;
+}
+
+#about-part .text:hover{
+    filter: drop-shadow(0 0 0.75rem #000);
+    -webkit-filter: drop-shadow(0 0 0.75rem #000);
+}
+
+
+#about-part .text:hover i{
+    color: #fec600;
+}
+
+#about-part .text i{
+    position: absolute;
+    bottom: -49px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .4s;
+}
+
+#about-part .text:hover{
+    filter: drop-shadow(0 0 0.75rem #000);
+    -webkit-filter: drop-shadow(0 0 0.75rem #000);
+}
+
+
+#about-part .text:hover i{
+    color: #fec600;
+}
+
+
+#about-part .text-bottom{
+    background: #eeeeee;
+    text-align: center;
+    padding: 50px;
+    position: relative;
+}
+
+
+
+
+#about-part .text-bottom h4{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color: #000;
+    font-weight: 500;
+}
+
+#about-part .text-bottom p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #000;
+    font-weight: 400;
+    transition: .4s;
+}
+
+#about-part .text-bottom .shape{
+    width: 40px;
+    height: 40px;
+    background: #eeeeee;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+
+#about-part .text-bottom i{
+    position: absolute;
+    top: -49px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .4s;
+}
+
+#about-part .text-bottom:hover{
+    filter: drop-shadow(0 0 0.75rem #000);
+    -webkit-filter: drop-shadow(0 0 0.75rem #000);
+}
+
+
+#about-part .text-bottom:hover i{
+    color: #fec600;
+}
+
+
+
+#about-part .text-left{
+    background: #eeeeee;
+    text-align: center;
+    padding: 50px;
+    position: relative;
+}
+
+
+
+
+#about-part .text-left h4{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color: #000;
+    font-weight: 500;
+}
+
+#about-part .text-left p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #000;
+    font-weight: 400;
+    transition: .4s;
+}
+
+#about-part .text-left .shape{
+    width: 40px;
+    height: 40px;
+    background: #eeeeee;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%,-50%) rotate(45deg);
+}
+
+#about-part .text-left i {
+    position: absolute;
+    top: 50%;
+    right: -56px;
+    transform: translateY(-50%);
+    transition: .4s;
+}
+
+#about-part .text-left:hover{
+    filter: drop-shadow(0 0 0.75rem #000);
+    -webkit-filter: drop-shadow(0 0 0.75rem #000);
+}
+
+
+#about-part .text-left:hover i{
+    color: #fec600;
+}
+
+#about-part .alignment{
+    display: flex;
+    align-items: center;
+}
+
+#about-part .text-right{
+    background: #eeeeee;
+    text-align: center;
+    padding: 50px;
+    position: relative;
+}
+
+
+
+
+#about-part .text-right h4{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color: #000;
+    font-weight: 500;
+}
+
+#about-part .text-right p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #000;
+    font-weight: 400;
+    transition: .4s;
+}
+
+#about-part .text-right .shape{
+    width: 40px;
+    height: 40px;
+    background: #eeeeee;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+
+#about-part .text-right i {
+    position: absolute;
+    top: 50%;
+    left: -56px;
+    transform: translateY(-50%);
+    transition: .4s;
+}
+
+#about-part .text-right:hover{
+    filter: drop-shadow(0 0 0.75rem #000);
+    -webkit-filter: drop-shadow(0 0 0.75rem #000);
+}
+
+
+#about-part .text-right:hover i{
+    color: #fec600;
+}
+
+#about-part .alignment{
+    display: flex;
+    align-items: center;
+}
+
+#about-part .round{
+    width: 370px;
+    height: 370px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#about-part .round .img{
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    position: relative;
+}
+
+#about-part .round .img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+#about-part .round .img .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+#about-part .one{
+    height: 300px;
+    background: red;
+}
+
+/* ===============================================
+            about end
+================================================== */
+
+/* ===============================================
+            portfolio start
+================================================== */
+#portfolio-part{
+    background: url(../images/porfolio-bg.png) no-repeat center;
+    background-size: cover;
+    margin-top: 100px;
+    
+}
+
+#portfolio-part .title{
+    color: #fff;
+}
+
+#portfolio-part .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0,.7);
+    padding: 200px 0;
+}
+
+#portfolio-part .img{
+    position: relative;
+    margin-bottom: 30px;
+}
+
+#portfolio-part .img img{
+    width: 100%;
+}
+
+#portfolio-part .img .img-overlay{
+    width: 100%;
+    height: 0%;
+     background: rgba(0, 0, 0, .7);
+     position: absolute;
+     top: 0;
+     left: 0;
+     transition: .4s;
+}
+
+#portfolio-part .img:hover .img-overlay{
+    height: 100%;
+}
+
+#portfolio-part .item:nth-child(even) {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+/* ===============================================
+            portfolio end
+================================================== */
+
+/* ===============================================
+            service start
+================================================== */
+
+#service-part{
+    position: relative;
+}
+
+#service-part .chain{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#service-part .service{
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#service-part .service:nth-child(odd){
+    flex-direction: row-reverse;
+}
+
+
+#service-part .service .left{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#service-part .service:nth-child(odd) .left {
+    justify-content: flex-start;
+}
+
+#service-part .service .middle {
+    width: 10%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+#service-part .service .middle .img{
+    width: 80px;
+    height: 80px;
+    background: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+}
+
+#service-part .service .right {
+    width: 40%;
+    background: #f1f1f1;
+    padding: 30px;
+}
+
+#service-part .slick-center .middle .img{
+    transform: scale(1.5);
+}
+
+/* ===============================================
+            service end
+================================================== */
